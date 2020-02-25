@@ -9,9 +9,9 @@ namespace publish_subscribe
             Publisher pub1 = new Publisher();
             pub1.Name = "Pub1";
 
-            Subscriber sub1 = new Subscriber();
-            Subscriber sub2 = new Subscriber();
-            Subscriber sub3 = new Subscriber();
+            Subscriber sub1 = new Subscriber("Subscriber1");
+            Subscriber sub2 = new Subscriber("Subscriber2");
+            Subscriber sub3 = new Subscriber("Subscriber3");
 
             sub1.Subscribe(pub1);
             sub2.Subscribe(pub1);
