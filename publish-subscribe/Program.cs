@@ -25,10 +25,10 @@ namespace publish_subscribe
 
             sub1.Subscribe(pub2);
             sub4.Subscribe(pub2);
-            pub2.Notify("Hello guys te hajdeni te henen!");
+            pub2.Notify("Hello guys, simple reminder; we have a party on monday!");
 
             sub2.Subscribe(pub2);
-            pub2.Notify($"Sapo na u shtua edhe {sub2.SubscriberName}");
+            pub2.Notify($"{sub2.SubscriberName} has joined!!");
             
             Console.ReadKey();
         }
