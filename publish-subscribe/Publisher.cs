@@ -6,6 +6,10 @@ namespace publish_subscribe
 {
     public class Publisher
     {
+        public Publisher(string name)
+        {
+            Name = name;
+        }
         public string Name { get; set; }
 
         public event EventHandler<MyArgs> myEvent;

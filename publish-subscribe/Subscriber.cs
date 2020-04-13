@@ -28,7 +28,7 @@ namespace publish_subscribe
         {
             Publisher pub =  (Publisher) sender;
 
-            Console.WriteLine(pub.Name + " sent a message: " +args.Message+ "to subscriber : "+ this.SubscriberName);
+            Console.WriteLine(pub.Name + " sent a message: '" +args.Message+ "' to subscriber : "+ this.SubscriberName);
         }
     }
 }
